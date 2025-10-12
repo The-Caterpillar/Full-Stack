@@ -1,0 +1,19 @@
+/*
+- Second way to add stlyes to react components is by creating different modules for different components.
+- For example, we created a Button module for button.
+- for CSS file, we created a Button.module.css file
+- This avoids the naming conflicts because a unique class is generated via hashing algorithms
+
+********* DRAWBACKS *********
+- global styles are not applied easily
+- requires additional setup
+*/
+
+.button{
+    color: white;
+    background-color: rgb(119, 119, 236);
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 5px 5px 5px #7350503a;
+}

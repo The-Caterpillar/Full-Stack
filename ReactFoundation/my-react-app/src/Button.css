@@ -1,0 +1,9 @@
+/* External CSS can be added to react components, but may lead to name-conflicts during bundling */
+/* .button{
+    color: white;
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    font: Arial, sans-serif;
+    box-shadow: 5px 5px 5px #7350503a;
+} */
