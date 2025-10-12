@@ -1,0 +1,26 @@
+.card{
+    border: 1px solid rgba(109, 109, 109, 0.352);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.card .profilePic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card .cardTitle {
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.502);
+    font: Arial, sans-serif;
+}
+.card .cardDesc {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.614);
+    font: Arial, sans-serif;
+}
