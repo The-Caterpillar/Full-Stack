@@ -1,0 +1,15 @@
+.Student{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid rgba(115, 115, 115, 0.221);
+    box-shadow: 5px 5px 5px rgba(63, 38, 38, 0.221);
+    margin: 10px;
+    max-width: 350px;
+    background-color: rgba(255, 192, 203, 0.4);
+    
+}
+
+.Student p{
+    margin: 0;
+}
