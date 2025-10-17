@@ -14,10 +14,10 @@ function Student (props) {
     )
 }
 
-Student.PropTypes = {
-    name : PropTypes.string,
-    age : PropTypes.number,
-    isStudent : PropTypes.bool,
+Student.propTypes = {
+    name : PropTypes.string.isRequired,
+    age : PropTypes.number.isRequired,
+    isStudent : PropTypes.bool.isRequired,
 }
 
 Student.defaultProps = {
@@ -26,4 +26,4 @@ Student.defaultProps = {
     isStudent: false,
 }
 
-export default Student
+export default Student;
