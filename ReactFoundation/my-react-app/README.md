@@ -1,3 +1,5 @@
+YOU CAN ONLY RUN THIS APP WITH: npm run cutie OR Change the scripts and run your way :-p
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
