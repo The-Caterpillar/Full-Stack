@@ -7,8 +7,8 @@ function UserGreeting({ isLoggedIn = false, userName = "Guest" }) {
     return (isLoggedIn ? welcomeMessage : loginPrompt);
 }
 
-UserGreeting.propTypes = {
-    isLoggedIn : PropTypes.bool.isRequired,
-    userName : PropTypes.string.isRequired,
-}
+// UserGreeting.propTypes = {
+//     isLoggedIn : PropTypes.bool.isRequired,
+//     userName : PropTypes.string.isRequired,
+// }
 export default UserGreeting
