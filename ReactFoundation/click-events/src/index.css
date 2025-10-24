@@ -1,0 +1,10 @@
+.rotate {
+  transform: rotate(360deg);
+  transition: transform 5s ease;
+}
+
+.Pimage{
+  height: 250px;
+  width: 250px;
+  border-radius: 10em;
+}
