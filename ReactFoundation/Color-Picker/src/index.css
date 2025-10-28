@@ -1,0 +1,63 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(135deg, #1e0036 0%, #54006e 40%, #ff0077 100%);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.color-picker-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 50px;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  background-color: rgba(245, 245, 245, 0.119);
+  border-image: linear-gradient(135deg, #ffffff, #5400ff, #00ffd5) 1;
+}
+
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0%, 0%, 80%);
+  border-radius: 2em;
+  margin-bottom: 2em;
+  transition: 0.25s ease;
+}
+label{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+input[type="color"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 10em;
+  padding: -50px;
+  background: linear-gradient(135deg, #ff007700, #5500ff00, #00ffd500) border-box;
+  background-clip: border-box;
+  cursor: pointer;
+}
