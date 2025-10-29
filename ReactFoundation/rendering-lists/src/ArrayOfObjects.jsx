@@ -19,12 +19,13 @@ function ArrayOfObjects(){
         setCarModel(event.target.value);
     }
 
-    function handleAddCar(){
+    function handleAddCar(e){
+        e.preventDefault();
         const newCar = {year: carYear, make: carMake, model: carModel};
         setCars(c => [...c, newCar]);
-        setCarYear();
-        setCarMake();
-        setCarModel();
+        setCarYear(new Date().getFullYear());
+        setCarMake("");
+        setCarModel("");
     }
 
     return(<>
@@ -38,11 +39,14 @@ function ArrayOfObjects(){
             </li>
             )}
         </ul>
+        
+        <form onSubmit={handleAddCar}>
+            <input type="number" value={carYear} onChange={handleYearChange} placeholder={new Date().getFullYear()}/> <br></br>
+            <input type="text" value={carMake} onChange={handleMakeChange} placeholder="Car make"/> <br></br>
+            <input type="text" value={carModel} onChange={handleModelChange} placeholder="Car model"/> <br></br>
+            <button type="submit">Add Car</button>
+        </form>
 
-        <input type="number" value={carYear} onChange={handleYearChange} placeholder={new Date().getFullYear()}/> <br></br>
-        <input type="text" value={carMake} onChange={handleMakeChange} placeholder="Car make"/> <br></br>
-        <input type="text" value={carModel} onChange={handleModelChange} placeholder="Car model"/> <br></br>
-        <button onClick={handleAddCar}>Add Car</button>
     </div>
     </>)
 }
