@@ -1,4 +1,5 @@
 import List from "./Lists"
+import UpdatingLists from "./UpdatingLists"
 function App() {
       
   const fruits =
@@ -22,6 +23,8 @@ function App() {
     <>
       {fruits.length > 0 && <List items = {fruits} category = "Fruits" />}
       {vegetables.length > 0 ? <List items = {vegetables} category = "Veggies" /> : ""}
+
+    <UpdatingLists/>
     </>
   )
 }
