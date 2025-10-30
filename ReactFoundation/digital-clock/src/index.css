@@ -1,0 +1,28 @@
+body{
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.clock-container{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 0.5em 0;
+}
+
+.clock{
+  color: white;
+  font-size: 10em;
+  font-weight: bolder;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.427);
+  text-align: center;
+  
+}
