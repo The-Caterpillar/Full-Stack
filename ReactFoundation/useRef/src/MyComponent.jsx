@@ -40,7 +40,7 @@ function MyComponent(){
       <button onClick={handleClick1}>Click me 1</button>
       <input ref={inputRef1}/> <br/>
 
-      <button onClick={handleClick2}>Click me 1</button>
+      <button onClick={handleClick2}>Click me 2</button>
       <input ref={inputRef2}/> <br/>
 
       <button onClick={handleClick3}>Click me 3</button>
