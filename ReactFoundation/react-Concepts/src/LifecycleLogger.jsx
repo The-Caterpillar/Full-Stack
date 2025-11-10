@@ -1,50 +1,41 @@
-import { Component } from "react";
+import { useState, useEffect } from "react";
+const LifecycleLogger = (props) => {
+  const [count, setCount] = useState(0);
 
-class LifecycleLogger extends Component{
-    constructor(props){
-        super(props)
-        console.log('component init...'); // initialized
+  const incrementCount = () => {
+    setCount(c => c + 1);
+  }
 
-        //this.incrementCount = this.incrementCount.bind(this); //to bind a regular fn to global this.
-        this.state = {
-            count: 0
-        }
-    }
+  useEffect(()=>{
+    console.log('component mounted');
 
-    incrementCount = () => {
-        this.setState((prevState) => ({
-            count: prevState.count + 1,
-        }))
-    }
+    // component will unmount
+    return () => {
+        console.log("Component unmounted");
+    };
+  },[])
 
-    componentDidMount(){
-        console.log("Component mounted")
-    }
-
-    componentDidUpdate(prevProps,prevState){
-        if(prevState.count != this.state.count)
+//   component did update
+  useEffect(()=>{
+    if(count > 0)
         {
-            console.log('component updated');
+            console.log('component did update');
         }
-    }
+  },[count]);
 
-    componentWillUnmount(){
-        console.log('component unmount...');
-    }
-    render () {
-        return (
-            <>
-                <div className="logger-container">
-                    <h2>LifecycleLogger (Class Component)</h2>
-                    <p> {this.props.message} </p>
-                    <p>Count: {this.state.count}</p>
+  return (
+    <>
+      <div className="logger-container">
+        <h2>LifecycleLogger (Functional Component)</h2>
+        <p> {props.message} </p>
+        <p>Count: {count}</p>
 
-                    <button onClick={this.incrementCount} className="secondary-btn">Update</button>
-                </div>
-            </>
-        );
-    }
-}
-
+        <button onClick={() => incrementCount()} className="secondary-btn">
+          Update
+        </button>
+      </div>
+    </>
+  );
+};
 
 export default LifecycleLogger;
