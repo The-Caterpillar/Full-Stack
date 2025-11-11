@@ -1,4 +1,5 @@
 import { Component } from "react";
+import styles from './LifeCycleLogger.module.css'
 
 class LifecycleLoggerClass extends Component{
     constructor(props){
@@ -34,12 +35,12 @@ class LifecycleLoggerClass extends Component{
     render () {
         return (
             <>
-                <div className="logger-container">
+                <div className={styles.logger_container}>
                     <h2>LifecycleLoggerClass (Class Component)</h2>
                     <p> {this.props.message} </p>
                     <p>Count: {this.state.count}</p>
 
-                    <button onClick={this.incrementCount} className="secondary-btn">Update</button>
+                    <button onClick={this.incrementCount} className={styles.secondary_btn}>Update</button>
                 </div>
             </>
         );
