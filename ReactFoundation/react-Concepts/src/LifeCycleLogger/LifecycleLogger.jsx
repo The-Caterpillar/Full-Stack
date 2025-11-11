@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from './LifeCycleLogger.module.css'
 const LifecycleLogger = (props) => {
   const [count, setCount] = useState(0);
 
@@ -25,12 +26,12 @@ const LifecycleLogger = (props) => {
 
   return (
     <>
-      <div className="logger-container">
+      <div className={styles.logger_container}>
         <h2>LifecycleLogger (Functional Component)</h2>
         <p> {props.message} </p>
         <p>Count: {count}</p>
 
-        <button onClick={() => incrementCount()} className="secondary-btn">
+        <button onClick={() => incrementCount()} className={styles.secondary_btn}>
           Update
         </button>
       </div>

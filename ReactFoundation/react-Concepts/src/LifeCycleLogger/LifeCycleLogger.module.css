@@ -30,17 +30,17 @@ button:hover{
     opacity: 0.9;
 }
 
-.primary-btn{
+.primary_btn{
     background: #007bff;
     color: white;
     margin-bottom: 10px;
 }
-.secondary-btn{
+.secondary_btn{
     background: #4726ca;
     color: white;
     margin-bottom: 10px;
 }
-.logger-container{
+.logger_container{
     margin-top: 15px;
     background: white;
     padding: 15px;

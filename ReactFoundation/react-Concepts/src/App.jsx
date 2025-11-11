@@ -1,23 +1,13 @@
-import { useState } from "react"
-import LifecycleLoggerClass from "./LifecycleLoggerClass";
-import LifecycleLogger from "./LifecycleLogger";
+import LifeCycleApp from "./LifeCycleLogger/LifeCycleApp";
+import UseRef from "./useRef_Timer/UnderstandingUseRef";
+import Timer from "./useRef_Timer/Timer";
 function App() {
-
-  const [showLogger,setShowLogger] = useState(false);
 
   return (
     <>
-      <div className="container">
-        <h2>React Lifecycle Playground</h2>
-
-        {/* Toggle LifecycleLoggerClass */}
-        <button className="primary-btn" onClick={() => setShowLogger(!showLogger)}>
-          {showLogger ? 'unmount logger' :'Mount logger'}
-        </button>
-
-        {/* {showLogger && <LifecycleLoggerClass message='Hello props'/>} */}
-        {showLogger && <LifecycleLogger message='Hello props'/>}
-      </div>
+    {/* <LifeCycleApp/> */}
+    {/* <UseRef/> */}
+    <Timer/>
     </>
   );
 }
