@@ -5,11 +5,11 @@ const UseRef = () => {
     console.log(inputRef);
 
     const submit = () => {
-        console.log(inputRef.current);
+        // console.log(inputRef.current);
         // inputRef.current.focus()
         inputRef.current.value = '';
         inputRef.current.blur();
-        console.log(inputRef.current.value);
+        // console.log(inputRef.current.value);
         inputRef.current.style.backgroundColor = 'green';
         inputRef.current.style.color = 'white';
         inputRef.current.setAttribute('placeholder','Updated...');
